@@ -53,14 +53,14 @@ namespace Hms.Data.Repositories.Implementation
                 var path = Path.Combine(directory, @"Task2.json");
                 StreamReader reader = new StreamReader(path);
                 var data = await reader.ReadToEndAsync();
-                var res = new JsonSerializerSettings()
+                var settings = new JsonSerializerSettings()
                 {
                     ContractResolver = new DefaultContractResolver()
                     {
                         NamingStrategy = new DefaultNamingStrategy()
                     }
                 };
-                DataForExport = JsonConvert.DeserializeObject<Info>(data, res);
+                DataForExport = JsonConvert.DeserializeObject<Info>(data, settings);
             }
             catch (Exception e)
             {
@@ -78,8 +78,14 @@ namespace Hms.Data.Repositories.Implementation
                 string path = Path.Combine(directory, @"Task3.json");
                 StreamReader reader = new StreamReader(path);
                 string data = reader.ReadToEnd();
-                
-                records = JsonConvert.DeserializeObject<List<Info>>(data);
+                var settings = new JsonSerializerSettings()
+                {
+                    ContractResolver = new DefaultContractResolver()
+                    {
+                        NamingStrategy = new DefaultNamingStrategy()
+                    }
+                };
+                records = JsonConvert.DeserializeObject<List<Info>>(data, settings);
                 foreach (var record in records)
                 {
                     DataStore.Add(record.Hotel.HotelID, record);
