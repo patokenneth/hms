@@ -3,11 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.2.32526.322
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hms.Api", "Hms.Api\Hms.Api.csproj", "{B9F82E3F-E415-4626-8D8C-063DEC3F9E46}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Hms.Api", "Hms.Api\Hms.Api.csproj", "{B9F82E3F-E415-4626-8D8C-063DEC3F9E46}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hms.Data", "Hms.Data\Hms.Data.csproj", "{472332E1-0080-4902-995D-2D1B7F3214B7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Hms.Data", "Hms.Data\Hms.Data.csproj", "{472332E1-0080-4902-995D-2D1B7F3214B7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hms.Core", "Hms.Core\Hms.Core.csproj", "{30434A1C-FEC5-4615-B6A5-5B372BEEEE7C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Hms.Core", "Hms.Core\Hms.Core.csproj", "{30434A1C-FEC5-4615-B6A5-5B372BEEEE7C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hms.Tests.Unit", "Hms.Tests.Unit\Hms.Tests.Unit.csproj", "{B76EE592-3CC1-4837-BB41-AEC1CD85305A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,6 +29,10 @@ Global
 		{30434A1C-FEC5-4615-B6A5-5B372BEEEE7C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{30434A1C-FEC5-4615-B6A5-5B372BEEEE7C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{30434A1C-FEC5-4615-B6A5-5B372BEEEE7C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B76EE592-3CC1-4837-BB41-AEC1CD85305A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B76EE592-3CC1-4837-BB41-AEC1CD85305A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B76EE592-3CC1-4837-BB41-AEC1CD85305A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B76EE592-3CC1-4837-BB41-AEC1CD85305A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
