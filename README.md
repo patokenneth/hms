@@ -1,11 +1,11 @@
-# hms (Hotel Management System)
+# HMS (Hotel Management System)
 A minimal API powering the operations of a Berlin hotel
 
 **Project Setup**
 - Hms.Api : The endpoints for the tasks.
 - Hms.Core: Serves as the backbone to transform and present data
 - Hms.Data: Provides the layer that extracts data.
-NOTE: 
+**NOTE:** 
 - I have exposed all the tasks via an api to easily verify the solution. Tasks two and three were implemented.
 - Json files were renamed according to task name
 - The generated excel file for task 2 is saved in the Hms.Api project.
